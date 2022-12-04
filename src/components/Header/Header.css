@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.header>img{
+    width: 13rem;
+    height: 10rem; 
+    margin-top: -3rem;
+    margin-left: -3rem;
+    filter:invert(30%) sepia(80%) saturate(1300%) hue-rotate(190deg) brightness(200%);
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}   
+.header-menu>li{
+    cursor: pointer;
+}
+.header-menu>li:hover{
+    color:var(--orange);
+    cursor: pointer;
+}

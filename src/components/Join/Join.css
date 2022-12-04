@@ -1,0 +1,64 @@
+.Join{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.left-j{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.left-j>hr{
+    width: 9.5rem;
+    height: -1rem;
+    position: absolute;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin-top: -10px;
+    background: orange;
+}
+.right-j{
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+.email-container{
+    position: absolute;
+    display: flex;
+    border: 1px solid transparent;
+    background: gray;
+    padding:0.5em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    right: 11rem;
+
+}
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+::placeholder{
+    color: var(--lightgray);
+}
+
+.email-container>button{
+    background: var(--orange);
+    color: white;
+}
+.email-container>button:hover{
+    color: var(--orange);
+    background: white;
+}
+
+.email-container>:hover{
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: var(--orange);
+
+}
