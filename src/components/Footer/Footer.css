@@ -24,11 +24,13 @@ height: 2rem;
 width: 2rem;
 cursor: pointer;
 }
-.logo-f>img{
-width: 10rem;
-cursor: pointer;
-filter:invert(30%) sepia(80%) saturate(1300%) hue-rotate(190deg) brightness(200%);
-
+.f-logo{
+    cursor: pointer;
+    width: 13rem;
+    height: 10rem;
+    margin-top: -3rem;
+    margin-left: -1rem;
+    filter:invert(30%) sepia(80%) saturate(1300%) hue-rotate(190deg) brightness(200%);
 }
 .blur-f-1{
     bottom: 0;

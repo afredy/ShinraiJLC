@@ -4,13 +4,6 @@
     font-weight: bold;
 }
 
-.header>img{
-    width: 13rem;
-    height: 10rem; 
-    margin-top: -3rem;
-    margin-left: -3rem;
-    filter:invert(30%) sepia(80%) saturate(1300%) hue-rotate(190deg) brightness(200%);
-}
 .header-menu{
     list-style: none;
     display: flex;
@@ -23,4 +16,33 @@
 .header-menu>li:hover{
     color:var(--orange);
     cursor: pointer;
+}
+.logo{
+    width: 13rem;
+    height: 10rem; 
+    margin-top: -3rem;
+    margin-left: -3rem;
+    filter:invert(30%) sepia(80%) saturate(1300%) hue-rotate(190deg) brightness(200%);
+}
+@media screen and (max-width:768px) {
+    .header> :nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .header-menu{
+        position: relative;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 1.5rem;
+        background: var(--appColor);
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        padding-right: 1.5rem;
+        /* left: -2rem; */
+    }
+    .header-menu>li:nth-child(2){
+        font-size: 1rem;
+    }
+    
 }

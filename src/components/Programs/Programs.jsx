@@ -2,6 +2,7 @@ import React from 'react'
 import './Programs.css'
 import { programsData } from '../../data/programsData'
 import rightArrow from '../../assets/rightArrow.png'
+import {Link} from 'react-scroll'
 
 const Programs = () => {
   return (
@@ -21,7 +22,13 @@ const Programs = () => {
               <span>{program.heading}</span>
               <span>{program.details}</span>
               <div className="join-now">
+              <Link 
+                            to='testimonials'
+                            span={true}
+                            smooth={true}
+                            >
                 <span>Join Now</span>
+                </Link>
                 <img src={rightArrow} alt="" />
               </div>
             </div>
